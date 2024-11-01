@@ -1,0 +1,1079 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+    />
+    <meta name="theme-color" content="#000" />
+    <meta name="msapplication-navbutton-color" content="#000" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000" />
+    <meta
+      name="description"
+      content="Discover fresh, handcrafted breads at BubbleBakery. Enjoy a variety of delicious options baked daily."
+    />
+    <meta
+      name="keywords"
+      content="bakery, fresh bread, pastries, croissants, sweet bread"
+    />
+    <meta name="author" content="BubbleBakery" />
+    <link
+      rel="shortcut icon"
+      href="assets/images/logo/logo.svg"
+      type="image/x-icon"
+    />
+    <title>
+      BubbleBakery - Discover fresh, handcrafted breads at BubbleBakery. Enjoy a
+      variety of delicious options baked daily.
+    </title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-content">
+        <div class="logo">
+          <h3 onclick="window.location.href=''">
+            <i class="fa-solid fa-burger fa-bounce" style="color: #c7a17a"></i
+            >&nbsp;BubbleBakery
+          </h3>
+        </div>
+        <nav class="navigation">
+          <h3 class="pb-2 brand d-none" onclick="window.location.href=''">
+            <i class="fa-solid fa-burger fa-bounce" style="color: #c7a17a"></i
+            >&nbsp;BubbleBakery
+          </h3>
+          <li>
+            <a
+              class="active"
+              href="#"
+              id="home-nav"
+              onclick="scrollToSection(event, 'home', 'home-nav')"
+              ><i class="fa-solid fa-house"></i>&ensp;Beranda</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              id="product-nav"
+              onclick="scrollToSection(event, 'products', 'product-nav')"
+              ><i class="fa-solid fa-bread-slice"></i>&ensp;Daftar Produk</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              id="service-nav"
+              onclick="scrollToSection(event, 'faq', 'service-nav')"
+              ><i class="fa-solid fa-user-gear"></i>&ensp;Layanan</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              id="order-nav"
+              onclick="scrollToSection(event, 'services', 'order-nav')"
+              ><i class="fa-solid fa-cart-shopping"></i>&ensp;Pemesanan</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              id="about-us"
+              onclick="scrollToSection(event, 'about', 'about-us')"
+              ><i class="fa-solid fa-users"></i>&ensp;Tentang Kami</a
+            >
+          </li>
+        </nav>
+        <div class="bars">
+          <img
+            src="assets/images/others/menu.png"
+            alt="hamburger-menu"
+            class="bar"
+          />
+        </div>
+      </div>
+    </header>
+    <div class="home-section" id="home">
+      <div class="home-content">
+        <h1 style="color: #edf2f7">
+          Dibuat dengan Cinta,<br />
+          Dinikmati dengan <br />Rasa
+        </h1>
+        <p>Terbuat dari Bahan Alami & Premium, untuk Rasa yang Autentik</p>
+        <div class="home-links">
+          <div class="first">
+            <a
+              href="#"
+              onclick="scrollToSection(event, 'products', 'product-nav')"
+              >Beli Sekarang</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-shop" id="products">
+      <div class="shop-links">
+        <div><h2>Daftar Produk</h2></div>
+        <div class="links">
+          <li
+            class="active link-menu"
+            onclick="setActive(this)"
+            data-filter="all"
+          >
+            Semua
+          </li>
+          <li
+            class="link-menu"
+            data-filter=".roti-bagel"
+            onclick="setActive(this)"
+          >
+            Bagel
+          </li>
+          <li
+            class="link-menu"
+            data-filter=".sandwich"
+            onclick="setActive(this)"
+          >
+            Sandwich
+          </li>
+          <li
+            class="link-menu"
+            data-filter=".focaccia"
+            onclick="setActive(this)"
+          >
+            Focaccia
+          </li>
+        </div>
+      </div>
+      <div class="shop-flex consts">
+        <div class="shop1 mix sandwich">
+          <div class="shop-image">
+            <img src="assets/images/products/2-lapis.png" alt="Roti Sandwich" />
+          </div>
+          <h2>Sandwich Dua Lapis</h2>
+          <div class="d-flex justify-content-between">
+            <article>RP 8.000</article>
+            <div
+              class="d-flex mb-3 align-items-center gap-1 justify-content-center"
+            >
+              <div class="stars mb-0 d-flex align-items-center gap-1">
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+              </div>
+              <div style="font-size: 12px">(283)</div>
+            </div>
+          </div>
+          <button
+            type="button"
+            class="btn btn-custom w-100"
+            onclick="sendWhatsAppMessage(this)"
+          >
+            <i class="fa-solid fa-cart-shopping"></i>&ensp;Beli Sekarang
+          </button>
+        </div>
+        <div class="shop1 mix sandwich">
+          <div class="shop-image">
+            <img src="assets/images/products/3-lapis.png" alt="Roti Sandwich" />
+          </div>
+          <h2>Sandwich Tiga Lapis</h2>
+          <div class="d-flex justify-content-between">
+            <article>Rp 12.000</article>
+            <div
+              class="d-flex mb-3 align-items-center gap-1 justify-content-center"
+            >
+              <div class="stars mb-0 d-flex align-items-center gap-1">
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+              </div>
+              <div style="font-size: 12px">(999+)</div>
+            </div>
+          </div>
+          <button
+            type="button"
+            class="btn btn-custom w-100"
+            onclick="sendWhatsAppMessage(this)"
+          >
+            <i class="fa-solid fa-cart-shopping"></i>&ensp;Beli Sekarang
+          </button>
+        </div>
+        <div class="shop1 mix sandwich">
+          <div class="shop-image">
+            <img
+              src="assets/images/products/segitiga.png"
+              alt="Roti Sandwich"
+            />
+          </div>
+          <h2>Sandwich Segitiga</h2>
+          <div class="d-flex justify-content-between">
+            <article>RP 7.000</article>
+            <div
+              class="d-flex mb-3 align-items-center gap-1 justify-content-center"
+            >
+              <div class="stars mb-0 d-flex align-items-center gap-1">
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+              </div>
+              <div style="font-size: 12px">(452)</div>
+            </div>
+          </div>
+          <button
+            type="button"
+            class="btn btn-custom w-100"
+            onclick="sendWhatsAppMessage(this)"
+          >
+            <i class="fa-solid fa-cart-shopping"></i>&ensp;Beli Sekarang
+          </button>
+        </div>
+        <div class="shop1 mix sandwich">
+          <div class="shop-image">
+            <img src="assets/images/products/panjang.png" alt="Roti Sandwich" />
+          </div>
+          <h2>Sandwich Panjang</h2>
+          <div class="d-flex justify-content-between">
+            <article>Rp 14.000</article>
+            <div
+              class="d-flex mb-3 align-items-center gap-1 justify-content-center"
+            >
+              <div class="stars mb-0 d-flex align-items-center gap-1">
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+              </div>
+              <div style="font-size: 12px">(459)</div>
+            </div>
+          </div>
+          <button
+            type="button"
+            class="btn btn-custom w-100"
+            onclick="sendWhatsAppMessage(this)"
+          >
+            <i class="fa-solid fa-cart-shopping"></i>&ensp;Beli Sekarang
+          </button>
+        </div>
+        <div class="shop1 mix roti-bagel">
+          <div class="shop-image">
+            <img
+              src="assets/images/products/bagel-salmon.png"
+              alt="Roti Bagel"
+            />
+          </div>
+          <h2>Bagel Salmon</h2>
+          <div class="d-flex justify-content-between">
+            <article>Rp 22.000</article>
+            <div
+              class="d-flex mb-3 align-items-center gap-1 justify-content-center"
+            >
+              <div class="stars mb-0 d-flex align-items-center gap-1">
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+              </div>
+              <div style="font-size: 12px">(999+)</div>
+            </div>
+          </div>
+          <button
+            type="button"
+            class="btn btn-custom w-100"
+            onclick="sendWhatsAppMessage(this)"
+          >
+            <i class="fa-solid fa-cart-shopping"></i>&ensp;Beli Sekarang
+          </button>
+        </div>
+        <div class="shop1 mix roti-bagel">
+          <div class="shop-image">
+            <img
+              src="assets/images/products/bagel-vanila.png"
+              alt="Roti Bagel"
+            />
+          </div>
+          <h2>Bagel Vanilla</h2>
+          <div class="d-flex justify-content-between">
+            <article>Rp 13.000</article>
+            <div
+              class="d-flex mb-3 align-items-center gap-1 justify-content-center"
+            >
+              <div class="stars mb-0 d-flex align-items-center gap-1">
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+              </div>
+              <div style="font-size: 12px">(879)</div>
+            </div>
+          </div>
+          <button
+            type="button"
+            class="btn btn-custom w-100"
+            onclick="sendWhatsAppMessage(this)"
+          >
+            <i class="fa-solid fa-cart-shopping"></i>&ensp;Beli Sekarang
+          </button>
+        </div>
+        <div class="shop1 mix roti-bagel">
+          <div class="shop-image">
+            <img src="assets/images/products/bagel.png" alt="Roti Bagel" />
+          </div>
+          <h2>Bagel Biji Poppy Seed</h2>
+          <div class="d-flex justify-content-between">
+            <article>Rp 11.000</article>
+            <div
+              class="d-flex mb-3 align-items-center gap-1 justify-content-center"
+            >
+              <div class="stars mb-0 d-flex align-items-center gap-1">
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+              </div>
+              <div style="font-size: 12px">(785)</div>
+            </div>
+          </div>
+          <button
+            type="button"
+            class="btn btn-custom w-100"
+            onclick="sendWhatsAppMessage(this)"
+          >
+            <i class="fa-solid fa-cart-shopping"></i>&ensp;Beli Sekarang
+          </button>
+        </div>
+        <div class="shop1 mix roti-bagel">
+          <div class="shop-image">
+            <img src="assets/images/products/bagel-2.png" alt="Roti Bagel" />
+          </div>
+          <h2>Bagel Biji Wijen</h2>
+          <div class="d-flex justify-content-between">
+            <article>Rp 10.000</article>
+            <div
+              class="d-flex mb-3 align-items-center gap-1 justify-content-center"
+            >
+              <div class="stars mb-0 d-flex align-items-center gap-1">
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+              </div>
+              <div style="font-size: 12px">(352)</div>
+            </div>
+          </div>
+          <button
+            type="button"
+            class="btn btn-custom w-100"
+            onclick="sendWhatsAppMessage(this)"
+          >
+            <i class="fa-solid fa-cart-shopping"></i>&ensp;Beli Sekarang
+          </button>
+        </div>
+        <div class="shop1 mix focaccia">
+          <div class="shop-image">
+            <img
+              src="assets/images/products/fokacia-salmon.png"
+              alt="Focaccia"
+            />
+          </div>
+          <h2>Focaccia Salmon</h2>
+          <div class="d-flex justify-content-between">
+            <article>Rp 17.000</article>
+            <div
+              class="d-flex mb-3 align-items-center gap-1 justify-content-center"
+            >
+              <div class="stars mb-0 d-flex align-items-center gap-1">
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+              </div>
+              <div style="font-size: 12px">(999+)</div>
+            </div>
+          </div>
+          <button
+            type="button"
+            class="btn btn-custom w-100"
+            onclick="sendWhatsAppMessage(this)"
+          >
+            <i class="fa-solid fa-cart-shopping"></i>&ensp;Beli Sekarang
+          </button>
+        </div>
+        <div class="shop1 mix focaccia">
+          <div class="shop-image">
+            <img src="assets/images/products/fokacia.png" alt="Focaccia" />
+          </div>
+          <h2>Focaccia Daun Hijau</h2>
+          <div class="d-flex justify-content-between">
+            <article>Rp 9.000</article>
+            <div
+              class="d-flex mb-3 align-items-center gap-1 justify-content-center"
+            >
+              <div class="stars mb-0 d-flex align-items-center gap-1">
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+              </div>
+              <div style="font-size: 12px">(87)</div>
+            </div>
+          </div>
+          <button
+            type="button"
+            class="btn btn-custom w-100"
+            onclick="sendWhatsAppMessage(this)"
+          >
+            <i class="fa-solid fa-cart-shopping"></i>&ensp;Beli Sekarang
+          </button>
+        </div>
+        <div class="shop1 mix focaccia">
+          <div class="shop-image">
+            <img src="assets/images/products/fokacia2.png" alt="Focaccia" />
+          </div>
+          <h2>Focaccia Olive</h2>
+          <div class="d-flex justify-content-between">
+            <article>Rp 13.000</article>
+            <div
+              class="d-flex mb-3 align-items-center gap-1 justify-content-center"
+            >
+              <div class="stars mb-0 d-flex align-items-center gap-1">
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+              </div>
+              <div style="font-size: 12px">(42)</div>
+            </div>
+          </div>
+          <button
+            type="button"
+            class="btn btn-custom w-100"
+            onclick="sendWhatsAppMessage(this)"
+          >
+            <i class="fa-solid fa-cart-shopping"></i>&ensp;Beli Sekarang
+          </button>
+        </div>
+        <div class="shop1 mix focaccia">
+          <div class="shop-image">
+            <img
+              src="assets/images/products/foccacia-original.png"
+              alt="Focaccia"
+            />
+          </div>
+          <h2>Focaccia Original</h2>
+          <div class="d-flex justify-content-between">
+            <article>Rp 8.000</article>
+            <div
+              class="d-flex mb-3 align-items-center gap-1 justify-content-center"
+            >
+              <div class="stars mb-0 d-flex align-items-center gap-1">
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+              </div>
+              <div style="font-size: 12px">(644)</div>
+            </div>
+          </div>
+          <button
+            type="button"
+            class="btn btn-custom w-100"
+            onclick="sendWhatsAppMessage(this)"
+          >
+            <i class="fa-solid fa-cart-shopping"></i>&ensp;Beli Sekarang
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="bg-menu" id="menu">
+      <div class="menu-title">
+        <section>Pricelist</section>
+        <h2>Daftar Coffee</h2>
+        <hr />
+      </div>
+      <div class="menu-flex">
+        <div class="menu1">
+          <div class="small-image">
+            <img src="assets/images/products/americano.png" alt="" />
+          </div>
+          <div><h4>Chocolate Espresso</h4></div>
+          <div class="line"></div>
+          <div><h4>Rp 15.000</h4></div>
+        </div>
+        <div class="menu1">
+          <div class="small-image">
+            <img src="assets/images/products/cappucino.png" alt="" />
+          </div>
+          <div><h4>Cappucino</h4></div>
+          <div class="line"></div>
+          <div><h4>Rp 14.000</h4></div>
+        </div>
+        <div class="menu1">
+          <div class="small-image">
+            <img src="assets/images/products/coffelatte.png" alt="" />
+          </div>
+          <div><h4>Coffe Latte</h4></div>
+          <div class="line"></div>
+          <div><h4>Rp 14.000</h4></div>
+        </div>
+        <div class="menu1">
+          <div class="small-image">
+            <img src="assets/images/products/espresso.png" alt="" />
+          </div>
+          <div><h4>Espresso Susu</h4></div>
+          <div class="line"></div>
+          <div><h4>Rp 12.000</h4></div>
+        </div>
+        <div class="menu1">
+          <div class="small-image">
+            <img src="assets/images/products/kopisusuvanilla.png" alt="" />
+          </div>
+          <div><h4>Kopi Susu Vanilla</h4></div>
+          <div class="line"></div>
+          <div><h4>Rp 13.000</h4></div>
+        </div>
+        <div class="menu1">
+          <div class="small-image">
+            <img src="assets/images/products/espresso.png" alt="" />
+          </div>
+          <div><h4>Kopi Susu Caramel</h4></div>
+          <div class="line"></div>
+          <div><h4>Rp 13.000</h4></div>
+        </div>
+        <div class="menu1">
+          <div class="small-image">
+            <img src="assets/images/products/americano.png" alt="" />
+          </div>
+          <div><h4>Americano</h4></div>
+          <div class="line"></div>
+          <div><h4>Rp 12.000</h4></div>
+        </div>
+        <div class="menu1">
+          <div class="small-image">
+            <img src="assets/images/products/vanillalatte.png" alt="" />
+          </div>
+          <div><h4>Vanilla Latte</h4></div>
+          <div class="line"></div>
+          <div><h4>Rp 12.000</h4></div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-gallery" id="galery">
+      <div class="gallery-flex">
+        <div class="image-one event">
+          <img src="assets/images/others/gallery-1.jpg" alt="" />
+          <div class="overlay"></div>
+        </div>
+        <div class="inside-gallery">
+          <div class="left">
+            <div class="event">
+              <img src="assets/images/others/gallery-2.jpg" alt="" />
+              <div class="overlay"></div>
+            </div>
+            <div class="event">
+              <img src="assets/images/others/gallery-3.jpg" alt="" />
+              <div class="overlay"></div>
+            </div>
+          </div>
+          <div class="right">
+            <div class="event">
+              <img src="assets/images/others/gallery-4.jpg" alt="" />
+              <div class="overlay"></div>
+            </div>
+            <div class="event">
+              <img src="assets/images/others/gallery-5.jpg" alt="" />
+              <div class="overlay"></div>
+            </div>
+          </div>
+        </div>
+        <div class="last-image event">
+          <img src="assets/images/others/gallery-6.jpg" alt="" />
+          <div class="overlay"></div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-about" id="services">
+      <div class="about-flex">
+        <div class="about1">
+          <div>
+            <img
+              src="assets/images/others/left-footer-image.jpg"
+              alt="footer-image-2"
+            />
+          </div>
+          <div class="about1-txt">
+            <h3 style="letter-spacing: 2px">Cara Pemesanan</h3>
+            <div class="txt-inside">
+              <section>Melalui WhatsApp</section>
+              <section>08123456789</section>
+            </div>
+            <div class="txt-inside">
+              <section>Melalui Outlet</section>
+              <section class="text-end">
+                Tersedia 4 lokasi outlet di Indonesia
+              </section>
+            </div>
+          </div>
+        </div>
+        <div class="about1">
+          <div>
+            <img
+              src="assets/images/others/right-footer-image.jpg"
+              alt="footer-image-2"
+            />
+          </div>
+          <div class="about1-txt">
+            <h3 style="letter-spacing: 2px">Jam Operasional</h3>
+            <div class="txt-inside">
+              <section>Setiap Hari</section>
+              <section>09.00 - 21.00 WIB</section>
+            </div>
+            <div class="txt-inside">
+              <section>Hari Jum'at</section>
+              <section>13.00 - 21.00 WIB</section>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="faq" id="faq" style="max-width: 90%; margin: 0 auto">
+      <h2 class="faq-title">Pertanyaan yang Sering di Tanyakan</h2>
+      <div
+        class="accordion"
+        style="
+          --bs-accordion-bg: #edf2f7;
+          --bs-accordion-color: #000;
+          --bs-accordion-border-color: #c7a17a;
+          --bs-accordion-btn-color: #edf2f7;
+          --bs-accordion-active-bg: #c7a17a;
+          --bs-accordion-btn-focus-box-shadow: none;
+        "
+        id="faq"
+      >
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseOne"
+              aria-expanded="true"
+              aria-controls="collapseOne"
+            >
+              Apa jenis roti yang tersedia di toko ini?
+            </button>
+          </h2>
+          <div
+            id="collapseOne"
+            class="accordion-collapse collapse show"
+            data-bs-parent="#faq"
+          >
+            <div class="accordion-body">
+              Kami menyajikan beragam pilihan roti, mulai dari roti klasik yang
+              lembut hingga kreasi roti yang unik dengan berbagai rasa dan
+              tekstur.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo"
+              aria-expanded="false"
+              aria-controls="collapseTwo"
+            >
+              Apakah saya bisa memesan roti secara online?
+            </button>
+          </h2>
+          <div
+            id="collapseTwo"
+            class="accordion-collapse collapse"
+            data-bs-parent="#faq"
+          >
+            <div class="accordion-body">
+              <strong>Ya,</strong> kami menyediakan layanan pemesanan online.
+              Anda bisa melakukan pemesanan melalui website kami atau melalui
+              aplikasi pesan antar yang bekerja sama dengan kami.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseThree"
+              aria-expanded="false"
+              aria-controls="collapseThree"
+            >
+              Berapa lama ketahanan roti setelah dibeli?
+            </button>
+          </h2>
+          <div
+            id="collapseThree"
+            class="accordion-collapse collapse"
+            data-bs-parent="#faq"
+          >
+            <div class="accordion-body">
+              Roti tawar dan roti manis umumnya dapat bertahan hingga 2-3 hari
+              jika disimpan di tempat yang sejuk. Roti tanpa pengawet sebaiknya
+              dikonsumsi segera untuk kualitas terbaik.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseFour"
+              aria-expanded="false"
+              aria-controls="collapseFour"
+            >
+              Apakah toko roti ini menawarkan layanan pengiriman?
+            </button>
+          </h2>
+          <div
+            id="collapseFour"
+            class="accordion-collapse collapse"
+            data-bs-parent="#faq"
+          >
+            <div class="accordion-body">
+              <strong>Ya,</strong> kami menyediakan layanan pengiriman untuk
+              area tertentu. Anda bisa menghubungi kami untuk mengetahui wilayah
+              pengiriman yang tersedia atau memesan melalui aplikasi pengiriman.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseFive"
+              aria-expanded="false"
+              aria-controls="collapseFive"
+            >
+              Bagaimana jika saya ingin mengajukan komplain atau saran?
+            </button>
+          </h2>
+          <div
+            id="collapseFive"
+            class="accordion-collapse collapse"
+            data-bs-parent="#faq"
+          >
+            <div class="accordion-body">
+              Kami selalu terbuka untuk mendengar masukan Anda! Silakan hubungi
+              kami melalui email di contact@example.com atau melalui nomor
+              telepon/WhatsApp kami di 08123456789.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseSix"
+              aria-expanded="false"
+              aria-controls="collapseSix"
+            >
+              Apakah ada diskon untuk pembelian dalam jumlah besar?
+            </button>
+          </h2>
+          <div
+            id="collapseSix"
+            class="accordion-collapse collapse"
+            data-bs-parent="#faq"
+          >
+            <div class="accordion-body">
+              <strong>Ya, </strong> kami menyediakan diskon khusus untuk
+              pembelian dalam jumlah besar, seperti pesanan untuk acara atau
+              katering. Silakan hubungi kami untuk informasi lebih lanjut.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseSeven"
+              aria-expanded="false"
+              aria-controls="collapseSeven"
+            >
+              Di mana saja lokasi outlet toko roti ini?
+            </button>
+          </h2>
+          <div
+            id="collapseSeven"
+            class="accordion-collapse collapse"
+            data-bs-parent="#faq"
+          >
+            <div class="accordion-body">
+              Anda bisa memesan langsung di toko kami dengan mengunjungi salah
+              satu dari empat outlet kami yang berlokasi di:
+              <ul class="list-unstyled mt-3">
+                <li>
+                  <strong>Jakarta:</strong> Jl. Thamrin No. 12, Menteng, Jakarta
+                  Pusat, DKI Jakarta 10340
+                </li>
+                <li>
+                  <strong>Surabaya:</strong> Jl. Tunjungan No. 5, Genteng, Kota
+                  Surabaya, Jawa Timur 60275
+                </li>
+                <li>
+                  <strong>Yogyakarta:</strong> Jl. Malioboro No. 21, Kelurahan
+                  Suryatmajan, Kecamatan Danurejan, DI Yogyakarta 55213
+                </li>
+                <li>
+                  <strong>Jepara:</strong> Jl. Pemuda No. 25, Kauman, Kec.
+                  Jepara, Kabupaten Jepara, Jawa Tengah 59417
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseEight"
+              aria-expanded="false"
+              aria-controls="collapseEight"
+            >
+              Jam berapa toko roti buka?
+            </button>
+          </h2>
+          <div
+            id="collapseEight"
+            class="accordion-collapse collapse"
+            data-bs-parent="#faq"
+          >
+            <div class="accordion-body">
+              Toko roti kami buka setiap hari mulai pukul 09.00 hingga 21.00
+              WIB. Untuk hari Jum'at buka pukul 13.00 hingga 21.00 WIB. Namun,
+              jam buka dapat berubah pada hari libur nasional.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer pb-3" id="about">
+      <div class="footer-flex">
+        <div class="footer-brand">
+          <div>
+            <h3
+              style="
+                font-family: 'Pushster', cursive;
+                font-weight: 700;
+                letter-spacing: 2px;
+              "
+            >
+              <i class="fa-solid fa-burger" style="color: #c7a17a"></i
+              >&nbsp;BubbleBakery
+            </h3>
+          </div>
+          <section style="line-height: 1.45rem; margin-top: 10px">
+            Tempat di mana aroma roti segar mengisi udara dan menghadirkan rasa
+            hangat yang khas setiap harinya. Kami menyajikan beragam pilihan
+            roti, mulai dari roti klasik yang lembut hingga kreasi roti yang
+            unik dengan berbagai rasa dan tekstur.
+          </section>
+        </div>
+
+        <div class="flex-space-between" style="flex-wrap: wrap">
+          <div class="social-media">
+            <section>
+              <h3>Social Media</h3>
+              <span
+                ><a href="https://facebook.com"
+                  ><i class="fab fa-facebook-square"></i>&ensp;Facebook</a
+                ></span
+              >
+              <span
+                ><a href="https://instagram.com"
+                  ><i class="fab fa-instagram"></i>&ensp;Instagram</a
+                ></span
+              >
+              <span
+                ><a href="https://tiktok.com"
+                  ><i class="fab fa-tiktok"></i>&ensp;Tiktok</a
+                ></span
+              >
+            </section>
+          </div>
+
+          <div class="contact">
+            <section>
+              <h3>Kontak Kami</h3>
+              <span
+                ><a href="https://wa.me/628123456789"
+                  ><i class="fab fa-whatsapp"></i>&ensp;08123456789</a
+                ></span
+              >
+              <span>
+                <a href="mailto:contact@example.com"
+                  ><i class="fa-regular fa-envelope"></i
+                  >&ensp;contact@example.com</a
+                ></span
+              >
+            </section>
+          </div>
+
+          <div class="legalitas">
+            <section>
+              <h3>Legalitas</h3>
+              <span
+                ><a href="javascript:void(0)"
+                  ><i class="fa-solid fa-file-signature"></i>&ensp;Syarat &
+                  Ketentuan</a
+                ></span
+              >
+              <span
+                ><a href="javascript:void(0)"
+                  ><i class="fa-solid fa-user-shield"></i>&ensp;Kebijakan
+                  Privasi</a
+                ></span
+              >
+            </section>
+          </div>
+
+          <div class="outlet">
+            <section>
+              <h3>Lokasi Outlet</h3>
+              <span
+                ><i class="fas fa-map-marker-alt"></i>&ensp;Jl. Thamrin No. 12,
+                Menteng, Jakarta Pusat, DKI Jakarta 10340</span
+              >
+              <span
+                ><i class="fas fa-map-marker-alt"></i>&ensp;Jl. Tunjungan No. 5,
+                Genteng, Kota Surabaya, Jawa Timur 60275</span
+              >
+              <span
+                ><i class="fas fa-map-marker-alt"></i>&ensp;Jl. Malioboro No. 21
+                Kelurahan Suryatmajan, Kecamatan Danurejan Yogyakarta, DI
+                Yogyakarta 55213</span
+              >
+              <span
+                ><i class="fas fa-map-marker-alt"></i>&ensp;Jl. Pemuda No. 25,
+                Kauman, Kec. Jepara, Kabupaten Jepara, Jawa Tengah 59417</span
+              >
+            </section>
+          </div>
+        </div>
+      </div>
+      <div
+        class="text-center copyright"
+        style="color: #edf2f7; margin-top: 4rem"
+      >
+        <p style="font-size: small">Copyright 2024, All Right Reserved</p>
+      </div>
+    </div>
+    <script src="assets/js/mixitup.min.js"></script>
+    <script>
+      var mixer = mixitup(".consts");
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+      function setActive(element) {
+        const links = document.querySelectorAll(".link-menu");
+        links.forEach((link) => link.classList.remove("active"));
+        element.classList.add("active");
+      }
+
+      function getGreeting() {
+        const hour = new Date().getHours();
+        if (hour >= 4 && hour < 12) {
+          return "selamat pagi";
+        } else if (hour >= 12 && hour < 15) {
+          return "selamat siang";
+        } else if (hour >= 15 && hour < 18) {
+          return "selamat sore";
+        } else {
+          return "selamat malam";
+        }
+      }
+
+      function sendWhatsAppMessage(button) {
+        const productName = button
+          .closest(".shop1")
+          .querySelector("h2").innerText;
+        const greeting = getGreeting();
+        const message = `Halo ${greeting}, saya mau beli roti *${productName}*.`;
+        const phoneNumber = "628123456789";
+        const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
+          message
+        )}`;
+        window.open(whatsappURL, "_blank");
+      }
+
+      function scrollToSection(event, sectionId, element) {
+        event.preventDefault();
+
+        const links = document.querySelectorAll("a");
+        links.forEach((link) => link.classList.remove("active"));
+
+        const activeLink = document.getElementById(element);
+        if (activeLink) {
+          activeLink.classList.add("active");
+        }
+
+        const targetElement = document.getElementById(sectionId);
+        const offset = -80;
+        const elementPosition =
+          targetElement.getBoundingClientRect().top + window.pageYOffset;
+        const offsetPosition = elementPosition + offset;
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: "smooth",
+        });
+      }
+    </script>
+  </body>
+</html>
