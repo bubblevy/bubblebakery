@@ -1,4 +1,4 @@
-<p align="center"><kbd><img src="https://bubblevy.github.io/bubblebakery/assets/images/demo/image.png" width="100%" alt="BubbleBakery Demo"></kbd></p>
+<p align="center"><kbd><img src="https://raw.githubusercontent.com/bubblevy/bubblebakery/main/assets/images/demo/image.png" width="100%" alt="BubbleBakery Demo"></kbd></p>
 
 ## About BubbleBakery
 
@@ -28,4 +28,4 @@ git clone https://github.com/bubblevy/bubblebakery.git
 
 ## License
 
-The BubbleMaps is open-sourced licensed under the [MIT license](https://github.com/bubblevy/bubblebakery/blob/main/LICENSE).
+The BubbleBakery is open-sourced licensed under the [MIT license](https://github.com/bubblevy/bubblebakery/blob/main/LICENSE).
